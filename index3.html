@@ -36,8 +36,8 @@
         .layer3 {
             width: 1220px; /* Ширина */
             padding: 25px; /* Поля */
-            background: #fc0; /* Колір фона */
-            border: 5px dashed black; /* Параметри рамки*/
+            background: #0D1117; /* Колір фона */
+            
         }
 
         .header1 {
@@ -77,7 +77,7 @@
 
         .footer {
             height: 150px;
-            margin-top: 550px;
+            margin-top: 250px;
             background: linear-gradient(to bottom, #19202B 0%,#2D3A4F 100%);
             text-align: center;
             font-size: 14px;
@@ -148,6 +148,9 @@
         .rr {
             font-family: Pompadur, 'Comic Sans MS', cursive;
         }
+        .rrr {
+            font-family:  Marker Felt, fantasy;
+        }
 
         .colortext {
             color: #0000ff;
@@ -161,75 +164,82 @@
     <div class="rr">
         <!-- The sidebar -->
         <div class="sidebar">
-            <a class="active" href="#home">Головна сторінка</a>
+            <a class="active" href="#home">Таблиця</a>
+            <a href="index1.html" target="_blank">Головна сторінка</a>
             <a href="index2.html" target="_blank">Фото галерея</a>
-            <a href="index3.html" target="_blank">рублі</a>
+            
         </div>
 
         <!-- Page content -->
         <div class="content">
-            <div class="nav">
-                <a href="#home">Главная</a>
-                <a href="#news">Новости</a>
-                <a href="#contact">Контакт</a>
+            <div align="right" class="nav">
+                <a href="https://kyrylchuk-of.github.io/kyrylchuk_of_1/">Мій перший САЙТ</a>
+                <a href="https://m4ksd.github.io/">Перший сайт мого друга</a>
+                <a href="index4.html"target="_blank">Колумбійський кокс</a>
             </div>
             <div class="main">
-                <h1><span class="colortext">Головна сторінка інформаційного сайту</h1></span>
+                <h1><span class="colortext">Крута таблиця</h1></span>
                 <hr></hr>
-                <p><span class="colortext1">Даний сайт призначений для лабораторної роботи, і тому вся інформація не повиння сприйматися в серйоз.</span></p>
+                <p><span class="colortext1">Дана сторінка призначений для розміщення на ній спеціальної таблиці.</span></p>
             </div>
             <div class="header1"></div>
-            
+
             <form method="post" id="myform"></form>
-            <br>
-            <center>
-                <table  style = "width: 100%;" border="5px" bordercolor="  #000000" bgcolor="#19202B" align="left" class="L">
-                    <thead>
-                        <tr>
-                            <th>
-                                <h4> </h4>
-                            </th>
-                            <th>
-                                <h4> Імя пармаетра</h4>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><center>Прізвеще та Імя</center></td>
-                            <td><center><input type="text" name="first_name" form="myform" required placeholder="Ваше імя"></center></td>
-                        </tr>
-                        <tr>
-                            <td><center>E-mail</center></td>
-                            <td><center><input type="text" name="email" form="myform" placeholder="Ваша е-адреса"></center></td>
-                        </tr>
-                        <tr>
-                            <td><center>Дата народження</center></td>
-                            <td><center><input type="date" id="date" name="date" form="myform" required></center></td>
-                        </tr>
-                        <tr>
-                            <td><center>Стать</center></td>
-                            <td>
-                                <center>
-                                    <select required>
-                                        <option value=''>Чоловік</option>
-                                        <option>Жінка</option>
-                                    </select>
-                                </center>
-</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th " align="right"colspan="2">
-                                 <input  type="submit" name="add" form="myform" />
-</th>
-                        </tr>
-                    </tfoot>
-                </table>
-            </center>
+            <br><br><br>
+            <h2>
+                <div class="rrr">
+                    <center>
+                        <table width="70%" style="width: 100%;" border="5px" bordercolor="  #000000" bgcolor="#19202B" align="left" class="L">
+                            <thead width="30%">
+                                <tr>
+                                    <th width="30%">
+
+                                    </th>
+                                    <th>
+                                        <h3>Пармаетри</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><center>Прізвеще та Імя</center></td>
+                                    <td><center><input type="text" name="first_name" form="myform" required placeholder="Ваше імя"></center></td>
+                                </tr>
+                                <tr>
+                                    <td><center>E-mail</center></td>
+                                    <td><center><input type="text" name="email" form="myform" placeholder="Ваша е-адреса"></center></td>
+                                </tr>
+                                <tr>
+                                    <td><center>Дата народження</center></td>
+                                    <td><center><input type="date" id="date" name="date" form="myform" required></center></td>
+                                </tr>
+                                <tr>
+                                    <td><center>Стать</center></td>
+                                    <td>
+                                        <center>
+                                            <select required>
+                                                <option value=''>Чоловік</option>
+                                                <option>Жінка</option>
+                                            </select>
+                                        </center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th " align="right" colspan="2">
+                                        <input type="submit" name="add" form="myform" />
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </center>
+                </div>
+            </h2>
+            <div align="bottom" class ="header1"><br><center><h1><div class="rrr">Дивлюсь на котика :)</div></h1></center></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="layer3">
-                <img src=" " />
+                <img src="https://github.com/Kyrylchuk-of/kamikadze.lab_12/blob/main/wallpaperflare.com_wallpaper.jpg?raw=true" width="1220px" height="90%" />
             </div>
 
             <div class="footer">
